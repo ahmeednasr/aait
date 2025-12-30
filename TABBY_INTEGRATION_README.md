@@ -126,6 +126,7 @@ override suspend fun createTabbySession(orderId: String) =
 ---
 
 ## 5️⃣ ViewModel
+## In Select payment methods Fragment 
 
 ```kotlin
 private val _tabbySessionListener =
@@ -202,7 +203,8 @@ when (response.data?.sessionStatus) {
 ```
 ---
 
-## 7️⃣ initTabby(orderId: String)
+## 7️⃣ InPay Fragment 
+## call initTabby(orderId: String) when tabby is selected as pay method
 
 ```kotlin
 private fun initTabby(orderId: String) {
@@ -285,13 +287,4 @@ private val checkoutContract =
 <string name="order_amount_too_low">The purchase amount is below the minimum amount</string>
 <string name="tabby_closed_msg">You aborted the payment</string>
 ```
-
 ---
-
-## ✅ Final Notes
-
-- Full Clean Architecture compliance
-- No business logic in UI
-- Production-ready
-- Supports Arabic & English
-- Safe for GitLab documentation
