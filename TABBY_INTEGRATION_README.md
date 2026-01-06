@@ -66,6 +66,13 @@ android {
 ```
 
 ---
+## Int APP  
+class App : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        TabbyFactory.setup(this, "__API_KEY_HERE__", TabbyEnvironment.Prod)
+    }
+}
 
 ## 3️⃣ Data Models
 
